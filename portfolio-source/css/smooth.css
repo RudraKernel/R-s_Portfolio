@@ -1,0 +1,55 @@
+/* smooth.css - loads last. Contact chips + laptop/mobile smoothness. */
+
+/* ---------- CONTACT: small horizontal chips ---------- */
+footer#contact .cgrid{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:10px;
+  max-width:900px; margin:1.6rem auto; grid-template-columns:none;
+}
+footer#contact .cgrid .cc{
+  flex:0 1 auto; width:auto; min-height:0 !important; height:auto;
+  display:inline-flex; flex-direction:row; align-items:center; gap:.55rem;
+  padding:.6rem 1.05rem; border-radius:999px; white-space:nowrap;
+}
+footer#contact .cgrid .cc i{font-size:1.15rem; line-height:1; margin:0}
+footer#contact .cgrid .cc b{font-size:.92rem; margin:0}
+footer#contact .cgrid .cc small{font-size:.72rem; margin:0; opacity:.7; overflow-wrap:normal; word-break:normal}
+
+footer#contact .rc-opts{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; grid-template-columns:none}
+footer#contact .rc-o{
+  flex:0 1 auto; width:auto; min-height:0; height:auto;
+  flex-direction:row; align-items:center; gap:.55rem;
+  padding:.6rem 1.05rem; border-radius:999px;
+}
+footer#contact .rc-o i{font-size:1.1rem; margin:0}
+footer#contact .rc-o b{font-size:.9rem; margin:0}
+footer#contact .rc-o small{display:none}
+
+@media (max-width:560px){
+  footer#contact .cgrid .cc small{display:none}
+  footer#contact .cgrid .cc,footer#contact .rc-o{padding:.55rem .9rem}
+  footer#contact .cgrid .cc:last-child{grid-column:auto}
+}
+
+/* ---------- SMOOTHNESS ---------- */
+html{-webkit-text-size-adjust:100%}
+body{-webkit-tap-highlight-color:transparent}
+a,button,.tile,.rc-o{touch-action:manipulation}
+#dot,#cr{will-change:translate}               /* cursor moves on the GPU */
+#vspace,#splash{transform:translateZ(0)}       /* own compositor layers */
+#vspace{will-change:transform}
+
+/* Phones / tablets: remove the costly blur and extras */
+@media (pointer:coarse),(max-width:820px){
+  header nav{backdrop-filter:none !important; -webkit-backdrop-filter:none !important; background:rgba(10,10,12,.92) !important}
+  .chip,.hl,#mus{backdrop-filter:none !important; -webkit-backdrop-filter:none !important; background:rgba(10,10,12,.88) !important}
+  .tile,.btn{transition-duration:.18s}
+}
+
+/* Mobile browser-bar jump */
+@supports (height:100dvh){
+  #vintro{height:100dvh}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important}
+}

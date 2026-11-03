@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Sora:wght@400;600;800&family=Manrope:wght@400;500;700&family=Playfair+Display:ital,wght@0,800;1,500;1,800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rudra K. | Developer, Esports IGL and Filmmaker — Portfolio</title>
+<meta name="description" content="I AM RUDRA (SAM, NOVA 07): B.Tech IT student at NMIMS Shirpur, front-end developer, esports in-game leader, actor and filmmaker based in Mumbai, India.">
+<meta name="author" content="Rudra K."><meta name="theme-color" content="#000000">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="assets/og.png">
+<meta property="og:type" content="website"><meta property="og:title" content="Rudra K. | Developer, Esports IGL and Filmmaker"><meta property="og:description" content="Projects, experience and an interactive space-themed portfolio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23ff1f8e' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23c6ff00'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rudra K.","alternateName":["SAM","NOVA 07"],"jobTitle":"Front-end developer and esports in-game leader","affiliation":{"@type":"CollegeOrUniversity","name":"NMIMS Shirpur"},"address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"}}</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/void.css">
+<script>try{if(matchMedia('(pointer:coarse)').matches){var _d=window.devicePixelRatio||1;Object.defineProperty(window,'devicePixelRatio',{get:function(){return Math.min(_d,1.5)},configurable:true})}}catch(e){}</script>
+<link rel="stylesheet" href="css/swiss.css">
+<link rel="stylesheet" href="css/enhance.css">
+<link rel="stylesheet" href="css/smooth.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+<noscript><p style="position:relative;z-index:20000;padding:20px;background:#000;color:#fff">Rudra K. is a front-end developer, esports in-game leader and filmmaker based in Mumbai, studying B.Tech IT at NMIMS Shirpur. Enable JavaScript to see the interactive portfolio.</p></noscript>
+<audio id="aud" src="assets/starboy.mp3" loop preload="auto" playsinline></audio>
+<a class="skipl" href="#about">Skip to content</a>
+<div id="intro">
+  <canvas id="warp"></canvas><i id="xh"></i><i id="yh"></i>
+  <div id="sig"></div><div id="sub"></div>
+  <button id="enter" class="hold" aria-label="Press and hold to engage hyperdrive and enter the site"><svg viewBox="0 0 128 128" aria-hidden="true"><circle cx="64" cy="64" r="60" class="tr"/><circle cx="64" cy="64" r="60" class="pg" id="ring"/></svg><span>HOLD</span></button>
+  <p id="hint">Hold to engage hyperdrive</p>
+  <button id="skip">Skip intro</button>
+</div>
+<div id="vintro" role="dialog" aria-label="Intro">
+  <div class="vi-top"></div><div class="vi-bot"></div>
+  <div class="vi-orb"><canvas id="earthc" aria-hidden="true"></canvas></div><div class="vi-spot" aria-hidden="true">BEYOND LOGIC</div><div class="vi-line"></div><div class="vi-hint">Move your cursor</div><div class="vi-c"><div class="vi-name"><span class="vi-b">Rudra</span></div><div class="vi-role">Developer &nbsp;/&nbsp; Esports IGL &nbsp;/&nbsp; Filmmaker</div></div>
+  <div class="vi-count"><b id="vnum">000</b><i>%</i></div>
+  <button id="venter" class="btn">Enter</button>
+  <button id="vskip">Skip</button>
+</div>
+<div id="sg" aria-hidden="true"><div><i></i><i></i><i></i><i></i><i></i></div></div>
+<canvas id="vspace" aria-hidden="true">
+</canvas>
+<canvas id="space"></canvas><canvas id="splash"></canvas><div class="glowA"></div><div class="glowB"></div>
+<div id="cosmos" aria-hidden="true"><canvas id="depth"></canvas><div class="neb n1"></div><div class="neb n2"></div><div id="moon"></div><div id="planet"><i></i></div></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<canvas id="fluid" aria-hidden="true"></canvas>
+<div id="dot"></div><div id="cr"></div><div id="trk">LIVE // X 0000 Y 0000 // SCROLL 0%</div>
+
+<header><nav>
+  <b>Rudra<span>.</span>K</b>
+  <a class="l" href="#about">About</a><a class="l" href="#edu">Education</a><a class="l" href="#skills">Skills</a><a class="l" href="#holo">Projects</a><a class="l" href="#esports">Esports</a><a class="l" href="#lab">Lab</a>
+  <a class="btn" href="#contact">Contact</a><button class="btn ghost" id="mbtn" aria-expanded="false" aria-controls="menu">Menu</button>
+</nav></header>
+<div id="menu" aria-hidden="true"><a href="#about">About</a><a href="#edu">Education</a><a href="#skills">Skills</a><a href="#holo">Projects</a><a href="#esports">Esports</a><a href="#lab">Lab</a><a href="#contact">Contact</a></div>
+<button class="btn ghost" id="mus" aria-label="Toggle background music">Music off</button>
+
+<main>
+<section id="hero">
+  <div>
+    <span class="pill"><i></i><i class="iconoir-globe"></i> Mumbai, Maharashtra · NMIMS Shirpur</span>
+    <h1><span>Beyond Logic.</span> <span>Beyond Limits.</span> <em>Beyond Ordinary.</em></h1>
+    <p class="lead">I AM RUDRA, also known as SAM and NOVA 07. I build websites with HTML and JS, lead esports teams as an IGL, and work as an actor and cinematographer.</p>
+    <div class="row"><a class="btn" href="#holo">View projects</a><a class="btn ghost" href="#esports">Esports record</a></div>
+  </div>
+  <div class="stage">
+    <div class="frame" id="hf" role="img" aria-label="Photos of Rudra K."><div class="pi m2 pa"></div><div class="pi m3 pb"></div><div class="pxg" id="pxg"></div></div>
+    <div class="hud"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><span class="scan"></span><div class="hl"><div><b>NOVA·07</b>DEV // IGL // FILMMAKER</div><em>● ONLINE</em></div></div>
+  </div>
+</section>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<div class="curve" aria-hidden="true"><svg id="csvg" viewBox="0 0 1440 230"><defs><path id="cpath" d="M-300,70 Q720,270 1740,70" fill="none"/></defs><text><textPath id="ctp" href="#cpath"></textPath></text></svg></div>
+
+<section id="about">
+  <span class="pill p eyebrow">About</span>
+  <h2 class="rv">A builder with a <em>cinematic</em> streak.</h2>
+  <div class="bento">
+    <div class="tile tall s2 rv"><div class="gi m4" role="img" aria-label="Rudra K. outdoors"></div></div>
+    <div class="tile s4 rv"><h3>About me</h3><p>I'm Rudra — a curious mind with a creative soul and a passion for technology, design, and everything that pushes boundaries. Currently pursuing engineering at NMIMS, I'm exploring the world of coding, web development, and innovative projects while constantly looking for opportunities to learn, experiment, and build something meaningful.</p><br><p>Beyond academics, I'm a music enthusiast, an anime fan, and someone who can spend hours talking about cars, bikes, gaming, or life itself. I enjoy hitting the gym, exploring creative ideas, and turning random thoughts into something worth building.</p><br><p>I believe in staying curious, thinking differently, and never limiting myself to just one interest. Whether it's developing a website, working on a new project, or chasing an idea that seems a little unrealistic, I'm always up for the challenge.</p><br><p><b>Still learning, still building, and nowhere near my final form.</b></p></div>
+        <div class="tile s4 rv"><h3>Interests</h3><p>Anime, music, series, Neighbours, physics and universe books, cars and bikes, sci-fi cinema and photography.</p></div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="jy-pin">
+    <div class="jy-head"><span class="pill p eyebrow">Chapters</span><h2>The story <em>so far.</em></h2></div>
+    <div class="jy-track" id="jytrack">
+      <article class="jy-panel"><span class="jy-n">01</span><h3>Curious</h3><p>Classes 1 to 4 at Royal International School in Dombivli, then ICSE at Guardian School through class 10. This is where the habit of asking "how does that work?" started.</p></article>
+      <article class="jy-panel"><span class="jy-n">02</span><h3>Competitor</h3><p>Seven years of competitive gaming. 103 tournaments won as in-game leader across Divinity, Exorcists, Dominion and NRL Eagles, with a Tier 2 lobby reached.</p></article>
+      <article class="jy-panel"><span class="jy-n">03</span><h3>Creator</h3><p>Video editing, cinematography and acting. Telling stories through the lens, on stage and on screen.</p></article>
+      <article class="jy-panel"><span class="jy-n">04</span><h3>Builder</h3><p>45 HTML, CSS and JavaScript projects, live websites like BeYogaWise, and a growing back-end skillset.</p></article>
+      <article class="jy-panel"><span class="jy-n">05</span><h3>Now</h3><p>B.Tech in Information Technology at NMIMS Shirpur, learning C, and still building. Nowhere near my final form.</p></article>
+    </div>
+    <div class="jy-bar"><i id="jybar"></i></div>
+  </div>
+</section>
+
+<section id="edu">
+  <span class="pill p eyebrow">Education</span>
+  <h2 class="rv">From Dombivli to <em>Shirpur.</em></h2>
+  <nav class="fm rv" aria-label="Education" data-fm='[{"t":"Royal International School","s":"Nandivali, Dombivli · Classes 1 to 4","k":"k-royal"},{"t":"Guardian School","s":"ICSE · Classes 5 to 10","k":"k-guard"},{"t":"Excellence Educare","s":"Integrated programme","k":"k-excel"},{"t":"NMIMS Shirpur","s":"B.Tech IT · currently pursuing","k":"k-nmims"}]'></nav>
+</section>
+
+<section id="skills">
+  <span class="pill p eyebrow">Skills</span>
+  <h2 class="rv">The <em>toolkit.</em></h2>
+  <div class="bento">
+    <div class="tile s3 rv nt"><div class="globe" id="globe" aria-label="Skills orbiting Rudra"><div class="gw"><i class="gr"></i><i class="gr a"></i><i class="gr b"></i></div><div class="gcore"><div class="gi m1 fc" role="img" aria-label="Rudra K."></div></div></div></div>
+    <div class="tile s3 rv"><h3>Development</h3><p>Front-end development, HTML, JavaScript and vibe coding. Currently learning C.</p><br><h3>Creative</h3><p>Video editing, cinematography, acting, storytelling and motion design.</p><br><h3>Soft skills</h3><p>Leadership, communication, teamwork, strategic thinking, decision making, adaptability, public speaking, time management, problem solving, creativity, discipline and emotional intelligence.</p></div>
+  </div>
+</section>
+
+<section id="holo">
+  <span class="pill p eyebrow">Projects</span>
+  <h2 class="rv">Built, edited and <em>shipped.</em></h2>
+  <p class="lead rv">A 3D explorer of everything I've made: live websites, 45 playable builds and my edits and film work. Drag to look around the dome. Click a panel to fly to it, click it again to open it.</p>
+  <div class="ptabs" id="ptabs" role="tablist"></div>
+  <div class="holo" id="holo3d" aria-label="3D project explorer. Drag to rotate."><div class="hring" id="hring"></div></div>
+  <div class="fnote" id="fnote" hidden><a class="btn ghost" href="https://www.instagram.com/thegalacticrudra/" target="_blank" rel="noopener"><i class="iconoir-instagram"></i> More edits and film on @thegalacticrudra</a></div>
+  <div class="hctl"><button class="btn ghost" id="hprev" aria-label="Previous">&larr;</button><span id="hinfo"></span><button class="btn ghost" id="hnext" aria-label="Next">&rarr;</button></div>
+</section>
+
+<div class="vmod" id="vmod" data-lenis-prevent role="dialog" aria-modal="true"><div class="ldr off" id="ldr"><span><i></i><i></i><i></i></span></div><div class="vmh"><b id="vmt"></b><span class="row"><button class="btn ghost" id="vmo">Open in new tab</button><button class="btn" id="vmc">Close</button></span></div><iframe id="vmf" title="Project preview" sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-downloads"></iframe></div>
+
+<section id="esports">
+  <span class="pill p eyebrow">Esports and sports</span>
+  <h2 class="rv">IGL with a <em>winning record.</em></h2>
+  <div class="bento">
+    <div class="tile s3 rv"><div class="big" data-n="7">0</div><h3>Years of gaming experience</h3><small>Competitive esports and in-game leading</small></div>
+    <div class="tile s3 rv"><div class="big" data-n="103">0</div><h3>Tournaments won as IGL</h3><small>Across Divinity, Exorcists, Dominion and NRL Eagles</small></div>
+    <div class="tile s3 rv team"><span class="lg kb k-div" role="img" aria-label="Team Divinity"></span><div><div class="big" data-n="7">0</div><h3>Team Divinity</h3><small>Tournaments won as IGL</small></div></div>
+    <div class="tile s3 rv team"><span class="lg kb k-exo" role="img" aria-label="The Exorcists"></span><div><div class="big" data-n="39">0</div><h3>The Exorcists</h3><small>Tournaments won as IGL</small></div></div>
+    <div class="tile s3 rv team"><span class="lg kb k-dom" role="img" aria-label="Team Dominion"></span><div><div class="big" data-n="12">0</div><h3>Team Dominion</h3><small>Tournaments won as IGL</small></div></div>
+    <div class="tile s3 rv team"><span class="lg kb k-eag" role="img" aria-label="NRL Eagles"></span><div><div class="big" data-n="45">0</div><h3>NRL Eagles</h3><small>Tournaments won as IGL · Tier 2 lobby reached</small></div></div>
+    <div class="tile s6 rv item"><svg class="ball" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#ff1f8e" stroke-width="3"><circle cx="50" cy="50" r="38"/><path d="M12 50h76M50 12v76M24 22c15 15 15 41 0 56M76 22c-15 15-15 41 0 56"/></g></svg><div><h3>Basketball</h3><p>District level player, A.Y. 2023-2024. Current gamer tag: NOVA 07.</p></div></div>
+    <div class="tile s6 rv" style="padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);min-height:280px"><div class="gi m3" role="img" aria-label="Rudra K., marquee player" style="min-height:280px"></div><div style="padding:1.6rem;align-self:center"><span class="pill p">Marquee player</span><h3 style="margin-top:.8rem">NOVA 07</h3><p>Marquee player and in-game leader.</p></div></div>
+  </div>
+</section>
+
+<section id="why">
+  <span class="pill p eyebrow">Why me</span>
+  <h2 class="rv">Why you should <em>consider me?</em></h2>
+  <p class="lead rv">I'm an IT student who builds, ships and tests software instead of only following tutorials. Here is what I bring on the technical side.</p>
+  <div class="bento">
+    <div class="tile s2 rv"><div class="big" data-n="45">0</div><h3>Projects built</h3><p>Every one is playable in the Builds section.</p></div>
+    <div class="tile s2 rv"><div class="big" data-n="15">0</div><h3>Advanced apps</h3><p>Dashboards, kanban, e-commerce, chat and more.</p></div>
+    <div class="tile s2 rv"><div class="big" data-n="30">0</div><h3>Mini apps</h3><p>Small tools that sharpen core JavaScript logic.</p></div>
+    <div class="tile s3 rv"><h3>Front-end engineering</h3><p>Semantic HTML5, modern CSS (grid, flexbox, animations), JavaScript ES6+, responsive and mobile-first layouts, accessibility basics, and smooth canvas animation with requestAnimationFrame.</p></div>
+    <div class="tile s3 rv"><h3>Back-end and fundamentals</h3><p>I work on back-end development and I'm learning C to understand memory, pointers and how software really runs. Strong fundamentals make me faster in any language.</p></div>
+    <div class="tile s3 rv"><h3>Real applications</h3><p>Analytics dashboard, finance tracker, kanban board, shopping cart, chat interface, weather app with API integration, code playground and persistent state with localStorage.</p></div>
+    <div class="tile s3 rv"><h3>Software practice</h3><p>Git and GitHub, clean file structure, readable code, and live deployments on Vercel. I ship for real users, like BeYogaWise.</p></div>
+    <div class="tile s6 rv"><h3>Tech I work with</h3><div class="tchs"><span class="tch">HTML5</span><span class="tch">CSS3</span><span class="tch">JavaScript ES6+</span><span class="tch">Back-end development</span><span class="tch">C (learning)</span><span class="tch">Git and GitHub</span><span class="tch">REST APIs</span><span class="tch">Responsive design</span><span class="tch">LocalStorage and state</span><span class="tch">Canvas and animation</span><span class="tch">Vercel deployment</span><span class="tch">AI-assisted coding</span></div></div>
+    <div class="tile s6 rv" style="text-align:center"><h3>Still learning, still building, and nowhere near my final form.</h3><br><div class="row" style="justify-content:center"><a class="btn" href="#holo">See my builds</a><a class="btn ghost" href="https://github.com/RudraKernel" target="_blank" rel="noopener">View GitHub</a><a class="btn ghost" href="#contact">Contact me</a></div></div>
+  </div>
+</section>
+
+<section id="resume">
+  <span class="pill p eyebrow">Résumé</span>
+  <div class="cine rv"><i class="cb t"></i><i class="cb b"></i><div class="cc"><small>A RUDRA K. PRODUCTION</small><b>RÉSUMÉ</b><em>Developer in the making &nbsp;/&nbsp; B.Tech IT &nbsp;/&nbsp; Builder</em></div></div>
+  <div class="rs">
+    <aside class="rs-card rv">
+      <small>NMIMS SHIRPUR · MUMBAI</small>
+      <h3>I AM RUDRA</h3>
+      <p>Developer in the making, esports IGL and filmmaker. Nowhere near my final form.</p>
+      <div class="rs-st"><div><div class="big" data-n="7">0</div><small>years gaming</small></div><div><div class="big" data-n="103">0</div><small>tournaments won</small></div><div><div class="big" data-n="45">0</div><small>projects built</small></div></div>
+      <div class="row"><a class="btn" href="assets/Rudra_K_Resume.pdf" download>Download PDF</a><a class="btn ghost" href="mailto:vivariumextimus@gmail.com">Email me</a></div>
+    </aside>
+    <div class="rs-main rv">
+      <div class="rs-tabs" role="tablist" aria-label="Résumé sections"><button role="tab" aria-selected="true" data-t="exp">Experience</button><button role="tab" aria-selected="false" data-t="edu">Education</button><button role="tab" aria-selected="false" data-t="skl">Skills</button><button role="tab" aria-selected="false" data-t="wrk">Works</button><i class="rs-ink"></i></div>
+      <div class="rs-pane on" id="rs-exp" role="tabpanel"><article class="rs-i"><time>7 years</time><h4>Esports in-game leader</h4><em>Team Divinity · The Exorcists · Team Dominion · NRL Eagles</em><p>103 tournaments won as IGL across four teams (7, 39, 12 and 45), reaching a Tier 2 lobby with NRL Eagles. Handle: NOVA 07.</p></article><article class="rs-i"><time>Creative</time><h4>Cinematographer</h4><em>Raw Vision Media</em><p>Shooting and editing video, telling stories through the lens.</p></article><article class="rs-i"><time>Creative</time><h4>Actor</h4><em>Rang Drama Club</em><p>Stage and screen performance.</p></article><article class="rs-i"><time>2023–24</time><h4>Basketball</h4><em>District level player</em><p>Team sport at district level, academic year 2023-2024.</p></article><article class="rs-i"><time>Now</time><h4>Class Representative · House Leader</h4><em>NMIMS Shirpur</em><p>Class Representative for IT first year, and House Leader.</p></article></div>
+      <div class="rs-pane" id="rs-edu" role="tabpanel"><article class="rs-i"><time>Now</time><h4>B.Tech, Information Technology</h4><em>NMIMS Shirpur</em><p>First year, currently pursuing. Learning C alongside back-end development.</p></article><article class="rs-i"><time>Classes 5–10</time><h4>ICSE</h4><em>Guardian School</em><p>Completed class 10 under the ICSE board.</p></article><article class="rs-i"><time>Integrated</time><h4>Excellence Educare</h4><em>Integrated programme</em><p></p></article><article class="rs-i"><time>Classes 1–4</time><h4>Royal International School</h4><em>Nandivali, Dombivli</em><p>Where the habit of asking how things work started.</p></article></div>
+      <div class="rs-pane" id="rs-skl" role="tabpanel"><div class="rs-sk"><h4>Development</h4><div class="tchs"><span class="tch">HTML5</span><span class="tch">CSS3</span><span class="tch">JavaScript ES6+</span><span class="tch">Back-end development</span><span class="tch">C (learning)</span><span class="tch">Git and GitHub</span><span class="tch">REST APIs</span><span class="tch">Responsive design</span><span class="tch">Canvas and animation</span><span class="tch">Vercel deployment</span></div></div><div class="rs-sk"><h4>Creative</h4><div class="tchs"><span class="tch">Video editing</span><span class="tch">Cinematography</span><span class="tch">Acting</span><span class="tch">Storytelling</span><span class="tch">Motion design</span></div></div><div class="rs-sk"><h4>People</h4><div class="tchs"><span class="tch">Leadership</span><span class="tch">Communication</span><span class="tch">Teamwork</span><span class="tch">Strategic thinking</span><span class="tch">Decision making</span><span class="tch">Adaptability</span><span class="tch">Public speaking</span><span class="tch">Time management</span><span class="tch">Problem solving</span><span class="tch">Discipline</span></div></div></div>
+      <div class="rs-pane" id="rs-wrk" role="tabpanel"><article class="rs-i"><time>Live</time><h4>BeYogaWise</h4><em>Website for a yoga teacher</em><p>A live site shipped for real users and deployed on Vercel.</p></article><article class="rs-i"><time>Live</time><h4>R.S. Poems and Ajeya</h4><em>Live websites</em><p></p></article><article class="rs-i"><time>45</time><h4>HTML, CSS and JavaScript builds</h4><em>Playable in the Projects dome</em><p>15 advanced apps (dashboards, kanban, e-commerce, chat) and 30 mini apps.</p></article></div>
+    </div>
+  </div>
+</section>
+
+<section id="lab">
+  <span class="pill p eyebrow">Interactive</span>
+  <h2 class="rv">Play, learn <em>and create.</em></h2>
+  <div class="bento">
+    <div class="tile s6 nt" id="splHost" hidden></div>
+    <div class="tile s3 rv nt"><h3>Bored? Check this out</h3><p>Ten quick games, from Snake to Simon.</p><br><button class="btn" id="arcBtn">Open arcade</button></div>
+    <div class="tile s3 rv nt"><h3>Increase your knowledge</h3><div class="fact" id="fact"></div></div>
+    <div class="tile s6 nt" id="arc" hidden><h3>Arcade</h3><div class="arcl" id="arcl"></div><div id="arcs"><p class="hint">Pick a game.</p></div></div>
+    <div class="tile s6 rv nt"><h3>Looks interesting? Create your <em class="vv">VIVRE CARD</em></h3><div class="vc"><div class="vcl" id="vcl"></div><div class="vcr" id="vcr"></div><div id="vcv"></div></div></div>
+    <div class="tile s6 rv nt"><h3>Interactive résumé</h3><div class="term" id="term"><div id="tout"></div><div class="trow"><span>rudra@portfolio:~$</span><input id="tin" autocomplete="off" spellcheck="false" placeholder="type help" aria-label="terminal command"></div></div></div>
+  </div>
+</section>
+<section id="wall">
+  <span class="pill p eyebrow">Visitor wall</span>
+  <h2 class="rv">People who left <em>a memory.</em></h2>
+  <p class="lead rv">Everyone here visited this portfolio and made a VIVRE CARD. Tap a card to flip it. <span id="wallcount"></span></p>
+  <div class="wallg" id="wallg"></div>
+</section>
+</main>
+
+<footer id="contact">
+  <span class="pill p eyebrow">Contact me</span>
+  <h2 class="rv">Let's build something <em>worth remembering.</em></h2>
+  <p class="lead" style="text-align:center;margin:0 auto">Open to collaborations, projects and good conversations about code, film, gaming and cars.</p>
+  <div class="cgrid">
+    <a class="tile cc" href="mailto:vivariumextimus@gmail.com"><i class="iconoir-mail"></i><b>Gmail</b><small>vivariumextimus@gmail.com</small></a>
+    <a class="tile cc" href="https://instagram.com/rrrudra_18" target="_blank" rel="noopener"><i class="iconoir-instagram"></i><b>Instagram</b><small>@rrrudra_18</small></a>
+    <a class="tile cc" href="https://www.linkedin.com/in/rudra-koregave-2b6547424/" target="_blank" rel="noopener"><i class="iconoir-linkedin"></i><b>LinkedIn</b><small>in/rudra-koregave</small></a>
+    <a class="tile cc" href="https://github.com/RudraKernel" target="_blank" rel="noopener"><i class="iconoir-github"></i><b>GitHub</b><small>@RudraKernel</small></a>
+  </div>
+  <div class="rc rv" id="reach">
+    <h3>What brings you here?</h3>
+    <p class="rc-sub">Pick one. I'll pre-write the message, you add the details, and it lands straight in my inbox.</p>
+    <div class="rc-opts" role="radiogroup" aria-label="Pick a topic">
+      <button type="button" class="rc-o" data-k="project" role="radio" aria-checked="false"><i class="iconoir-code-brackets"></i><b>Wanna build some projects?</b><small>Websites, apps, ideas</small></button>
+      <button type="button" class="rc-o" data-k="edit" role="radio" aria-checked="false"><i class="iconoir-scissor"></i><b>Want to make some edits?</b><small>Reels, videos, motion</small></button>
+      <button type="button" class="rc-o" data-k="film" role="radio" aria-checked="false"><i class="iconoir-video-camera"></i><b>Want to make something filmy?</b><small>Shoots, acting, cinematography</small></button>
+    </div>
+    <form class="rc-f" id="rcf" hidden novalidate>
+      <input name="name" placeholder="Your name" required maxlength="60" autocomplete="name" aria-label="Your name">
+      <input name="contact" placeholder="Your email or phone, so I can reply" required maxlength="80" autocomplete="email" aria-label="Your email or phone">
+      <textarea name="msg" rows="5" required maxlength="1000" aria-label="Your message"></textarea>
+      <input name="website" class="rc-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row"><button class="btn" type="submit" id="rcsend">Send to Rudra</button><a class="btn ghost" id="rcwa" href="mailto:vivariumextimus@gmail.com">Email instead</a></div>
+      <p id="rcs" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="row" id="flinks" hidden></div>
+  <div class="row" style="justify-content:center;margin-top:.7rem"><a class="btn ghost" href="https://sakshamxdaksh-phi.vercel.app/" target="_blank" rel="noopener">See Ajeya</a><a class="btn" href="assets/Rudra_K_Resume.pdf" download>Download résumé</a><a class="btn ghost" href="#hero">Back to top</a></div>
+  <small>Rudra K. · NOVA 07 · SAM · Mumbai, Maharashtra</small>
+</footer>
+
+<div class="vmod" id="vidm" data-lenis-prevent role="dialog" aria-modal="true"><div class="vmh"><b id="vidt"></b><button class="btn" id="vidc">Close</button></div><div id="vidb"></div></div>
+<script src="js/qr.js"></script>
+<script src="js/wall-config.js"></script>
+<script src="js/part2.js"></script>
+
+<script src="js/part3.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/part4.js"></script>
+<script src="js/part5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/artist-videos.js"></script>
+<script src="js/part6.js"></script>
+<script src="js/cosmos.js"></script>
+<script src="js/holo3d.js"></script>
+<script src="js/earth.js"></script>
+<script src="js/void.js"></script>
+<script src="js/voidspace.js"></script>
+<script src="js/scrollfx.js"></script>
+<script src="js/enhance.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
