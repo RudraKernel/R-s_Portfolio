@@ -1,18 +1,19 @@
-# Launch checklist
+## ✨ Portfolio Website — Features & Highlights
 
-## Must do before sharing the link (the intro Earth is drawn in code now, so no photos are needed)
-1. **Music:** put your track at `assets/starboy.mp3`. (Until then the music button hides itself.)
-2. **Reels:** add your reels in `js/artist-videos.js` (paste the Instagram reel links). Until then the Edits and film tab links to @thegalacticrudra.
-3. **Visitor wall:** create the free Firebase project (steps in `README.txt`) and fill `js/wall-config.js` (projectId, apiKey, siteUrl).
-   Until then the public site hides the wall and the VIVRE bot skips the "add me to the wall" question, so nobody sees an empty wall.
+My personal portfolio website is a digital space where I showcase my identity, technical skills, creative interests, projects, and journey as a developer.
 
-## Deploy (Vercel, free)
-1. Put the folder in your R-s-Portfolio GitHub repo (index.html at the top level).
-2. vercel.com > Add New > Project > import the repo > Deploy. No build settings needed.
-3. Add the live link to: GitHub profile Website field, Instagram bio, LinkedIn, résumé.
-4. Share image: after deploy, change `assets/og.png` in the two meta tags to the full address, e.g. `https://yoursite.vercel.app/assets/og.png`.
+### 🌟 What's Inside?
 
-## Final checks on the live site
-- Open on your phone and on a laptop; press Enter on the intro, scroll to the end.
-- Open one build from the dome, make a VIVRE card with your own Instagram and scan its QR.
-- Open the résumé PDF.
+- **Personal Introduction** — A dedicated introduction that presents who I am and what I do.
+- **About Me** — A glimpse into my personality, interests, and journey.
+- **Skills & Technologies** — A showcase of my technical knowledge and development skills.
+- **Projects Showcase** — A collection of my projects, experiments, and development work.
+- **Creative Interests** — A representation of my creativity beyond programming.
+- **Contact Section** — A way to connect with me and explore potential collaborations.
+- **Responsive Design** — A website designed to provide a smooth experience across different screen sizes.
+- **Interactive UI** — An engaging interface with visual elements and interactive components.
+
+### 🌐 Explore My Portfolio
+
+🔗 **Live Website:** [rudra17.vercel.app](https://rudra17.vercel.app)
+
