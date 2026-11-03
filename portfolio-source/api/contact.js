@@ -1,15 +1,13 @@
-// Vercel serverless function: POST /api/contact  ->  emails the message to you via Resend.
-// Env vars (Vercel > Project > Settings > Environment Variables):
-//   RESEND_API_KEY  (required)   TO_EMAIL (default rudrakoregave@gmail.com)   FROM_EMAIL (default Resend's test sender)
+
 const KINDS = { project: 'PROJECT', edit: 'EDITING', film: 'FILMY' };
-const hits = new Map(); // best-effort rate limit per IP
+const hits = new Map(); 
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ ok: false });
   let b = req.body;
   if (typeof b === 'string') { try { b = JSON.parse(b); } catch (e) { b = {}; } }
   b = b || {};
-  if (b.website) return res.status(200).json({ ok: true }); // honeypot: bots fill this
+  if (b.website) return res.status(200).json({ ok: true }); 
 
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'x';
   const now = Date.now(), list = (hits.get(ip) || []).filter(t => now - t < 600000);
