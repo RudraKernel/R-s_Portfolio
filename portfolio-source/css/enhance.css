@@ -1,4 +1,4 @@
-/* enhance.css — enter-screen cursor effect + mobile smoothness (loads last) */
+
 html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
 *{-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
@@ -7,7 +7,7 @@ a,button,.btn,input{touch-action:manipulation}
 #holo3d{touch-action:pan-y}
 img,video,iframe{max-width:100%}
 
-/* enter screen */
+
 #vintro{height:100vh;height:100dvh}
 #vintro .vi-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
 #vintro::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
@@ -18,12 +18,11 @@ img,video,iframe{max-width:100%}
 #venter:active{scale:.94}
 #vskip:hover{color:var(--text)}
 
-/* button feedback */
 .btn:active{scale:.95}
 .btn .rip{position:absolute;border-radius:50%;pointer-events:none;width:12px;height:12px;margin:-6px 0 0 -6px;background:rgba(255,90,54,.5);animation:rip .6s ease-out forwards}
 @keyframes rip{to{transform:scale(18);opacity:0}}
 
-/* phones / touch */
+
 @media (hover:none),(pointer:coarse){
   #dot,#cr{display:none!important}
   .btn,button{min-height:44px}
@@ -32,14 +31,14 @@ img,video,iframe{max-width:100%}
 @media (max-width:700px){section{scroll-margin-top:64px}.bento{gap:.8rem}}
 @media (prefers-reduced-motion:reduce){#vintro .vi-fx{display:none}.btn .rip{display:none}}
 
-/* display font: Space Grotesk, with looser tracking (Inter Tight at -0.06em looked cramped) */
+
 :root{--disp:'Space Grotesk','Inter Tight','Helvetica Neue',Arial,sans-serif}
 .vi-name{font-family:var(--disp)!important;font-weight:700!important;letter-spacing:-.035em!important}
 .vi-count,.vi-spot{font-family:var(--disp)!important;letter-spacing:-.035em!important}
 #hero h1{font-family:var(--disp)!important;font-weight:700!important;letter-spacing:-.03em!important;line-height:1.02!important}
 h2,h3,.big{font-family:var(--disp);letter-spacing:-.02em}
 
-/* ===== premium polish ===== */
+
 ::selection{background:var(--pink);color:#050505}
 html{scrollbar-width:thin;scrollbar-color:#2a2a28 transparent}
 .tile{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015))!important;border:1px solid rgba(255,255,255,.09)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 24px 60px -30px rgba(0,0,0,.8)!important;transition:border-color .35s,box-shadow .35s,scale .25s}
@@ -48,7 +47,7 @@ h2{letter-spacing:-.03em;line-height:1.02}
 .lead,.tile p{line-height:1.65}
 .eyebrow{letter-spacing:.2em}
 
-/* ===== résumé dossier ===== */
+
 .rs{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:1.2rem;margin-top:1.2rem;align-items:start}
 .rs-card{position:sticky;top:88px;padding:1.8rem;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(160deg,rgba(255,90,54,.12),rgba(255,255,255,.02) 55%);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
 .rs-card>small,.rs-st small{font:500 .66rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
@@ -76,14 +75,14 @@ h2{letter-spacing:-.03em;line-height:1.02}
 .rs-sk{padding:0 0 1.4rem}.rs-sk h4{font:600 .72rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--pink);margin-bottom:.7rem}
 @media (max-width:860px){.rs{grid-template-columns:1fr}.rs-card{position:static}}
 
-/* hero: keep the photo inside the page, centred in its own column */
+
 #hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(2rem,4vw,4rem);align-items:center}
 #hero>div{min-width:0}
 #hero h1{font-size:clamp(2.2rem,4.7vw,4.6rem)!important;max-width:100%}
 .stage{width:min(400px,100%);justify-self:center;margin:0 auto}
 @media (max-width:860px){#hero{grid-template-columns:minmax(0,1fr)}#hero h1{font-size:clamp(2.1rem,9.5vw,3.6rem)!important}.stage{width:min(400px,86vw)}}
 
-/* ===== contact: topic picker + message form ===== */
+
 .rc{max-width:1050px;margin:2.4rem auto 0;padding:clamp(1.2rem,3vw,2rem);text-align:left;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(160deg,rgba(255,90,54,.1),rgba(255,255,255,.02) 55%)}
 .rc h3{font-size:clamp(1.4rem,3vw,2rem);letter-spacing:-.03em}
 .rc-sub{color:var(--mute);margin:.4rem 0 1.2rem}
@@ -102,14 +101,14 @@ h2{letter-spacing:-.03em;line-height:1.02}
 #rcwa.flash{animation:fl 1s ease 3}@keyframes fl{50%{box-shadow:0 0 0 3px var(--pink),0 0 28px rgba(255,90,54,.6)}}
 @media (max-width:760px){.rc-opts{grid-template-columns:1fr}}
 
-/* contact tiles: all in one row */
+
 .cgrid{grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem;max-width:1100px}
 .cgrid .cc{padding:1.1rem}
 .cgrid .cc small{font-size:.74rem;overflow-wrap:anywhere}
 @media (max-width:980px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:560px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.cgrid .cc:last-child{grid-column:1/-1}}
 
-/* ===== start screen: "Rudra" in Playfair Display ===== */
+
 #vintro .vi-name{font-family:'Playfair Display',Georgia,'Times New Roman',serif!important;font-style:italic!important;font-weight:800!important;
   letter-spacing:-.01em!important;font-size:clamp(3.6rem,17vw,13rem)!important;line-height:1.08!important;gap:.28em!important;
   padding:.08em .12em .2em!important;align-items:baseline;white-space:nowrap}
