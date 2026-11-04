@@ -1,0 +1,92 @@
+# Vercel Web Analytics Implementation
+
+## Summary
+Successfully installed and configured Vercel Web Analytics for this static HTML portfolio site.
+
+## Changes Made
+
+### Modified Files
+- **portfolio-source/index.html** - Added Vercel Analytics and Speed Insights scripts to the `<head>` section
+
+## Implementation Details
+
+### What Was Added
+Added the following scripts just before the closing `</head>` tag:
+
+1. **Vercel Web Analytics initialization script**
+   ```javascript
+   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+   ```
+
+2. **Vercel Analytics tracking script**
+   ```html
+   <script defer src="/_vercel/insights/script.js"></script>
+   ```
+
+3. **Speed Insights initialization script**
+   ```javascript
+   window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+   ```
+
+4. **Speed Insights tracking script**
+   ```html
+   <script defer src="/_vercel/speed-insights/script.js"></script>
+   ```
+
+## Implementation Approach
+
+### Framework Detection
+This project is a **static HTML/CSS/JavaScript portfolio** with no framework or build system. Therefore, I used the script tag approach recommended by Vercel for static sites.
+
+### Why This Approach?
+- **No package manager**: The project has no package.json, so npm installation was not applicable
+- **Static HTML deployment**: For sites deployed on Vercel without a framework, the `/_vercel/insights/script.js` path is the recommended approach
+- **Performance optimized**: Using `defer` attribute ensures scripts load asynchronously without blocking page rendering
+
+### Documentation Sources
+Implementation was based on the latest Vercel documentation:
+- Vercel Analytics Quickstart Guide: https://vercel.com/docs/analytics/quickstart
+- Vercel Community recommendations for static HTML sites
+- GitHub examples of Vercel Analytics integration in static websites
+
+## Features Enabled
+
+### Web Analytics
+- Tracks page views and visitor data
+- Records user interactions and bounce rates
+- Provides demographic information
+- Uses hash-based visitor identification (no cookies required)
+
+### Speed Insights
+- Monitors Core Web Vitals
+- Tracks page load performance
+- Measures real user performance metrics
+
+## Testing & Verification
+
+### What Works
+- HTML structure validated (proper head/body tags intact)
+- Scripts placed in correct location (before `</head>`)
+- All existing functionality preserved
+- No build process required
+
+### How to Verify After Deployment
+1. Deploy the site to Vercel
+2. Visit the site in an incognito browser window
+3. Open browser DevTools > Network tab
+4. Look for requests to `/_vercel/insights/view` and `/_vercel/speed-insights/vitals`
+5. View analytics data in the Vercel dashboard under Analytics
+
+## Notes
+
+- **No package installation required**: Static HTML sites use script tags, not npm packages
+- **No lock files to update**: This project has no package manager dependencies
+- **No build step needed**: Changes are immediately effective upon deployment
+- **Privacy-friendly**: Vercel Analytics doesn't use cookies and is GDPR compliant
+
+## Next Steps
+
+After deployment to Vercel:
+1. Enable Web Analytics in the Vercel project dashboard if not already enabled
+2. Wait a few hours for data to start appearing in the dashboard
+3. Speed Insights data may take a couple of days to accumulate meaningful metrics
