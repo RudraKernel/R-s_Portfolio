@@ -17,17 +17,23 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rudra K.","alternateName":["SAM","NOVA 07"],"jobTitle":"Front-end developer and esports in-game leader","affiliation":{"@type":"CollegeOrUniversity","name":"NMIMS Shirpur"},"address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"}}</script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/void.css">
-<script>try{if(matchMedia('(pointer:coarse)').matches){var _d=window.devicePixelRatio||1;Object.defineProperty(window,'devicePixelRatio',{get:function(){return Math.min(_d,1.5)},configurable:true})}}catch(e){}</script>
+<script>try{var _d=window.devicePixelRatio||1,_cap=matchMedia('(pointer:coarse)').matches?1.25:1.5;if(_d>_cap){Object.defineProperty(window,'devicePixelRatio',{get:function(){return _cap},configurable:true})}}catch(e){}</script>
+<script>/* adaptive performance: if the page runs under ~38fps, switch to lite mode (30fps cap + heavy decorative layers off) */
+(function(){var lite=false,raf=window.requestAnimationFrame,caf=window.cancelAnimationFrame,map={},n=0;
+window.requestAnimationFrame=function(cb){var id=++n;function step(t){if(lite&&t-(cb._l||0)<30){map[id]=raf.call(window,step);return}cb._l=t;delete map[id];cb(t)}map[id]=raf.call(window,step);return id};
+window.cancelAnimationFrame=function(id){if(map[id]){caf.call(window,map[id]);delete map[id]}else caf.call(window,id)};
+function probe(){var c=0,t0=0;function f(t){if(!t0)t0=t;c++;if(c<90){raf.call(window,f);return}var avg=(t-t0)/(c-1);if(avg>26){lite=true;document.documentElement.classList.add('lite')}}raf.call(window,f)}
+window.addEventListener('load',function(){setTimeout(probe,2500)})})();</script>
 <link rel="stylesheet" href="css/swiss.css">
 <link rel="stylesheet" href="css/enhance.css">
 <link rel="stylesheet" href="css/smooth.css">
-<style>.gi.bp-photo{filter:grayscale(1) contrast(1.1);transition:filter .5s ease}.gi.bp-photo:hover{filter:none}</style>
+<style>.gi.bp-photo{filter:grayscale(1) contrast(1.1);transition:filter .5s ease}.gi.bp-photo:hover{filter:none}html.lite #fluid,html.lite #splash,html.lite .glowA,html.lite .glowB,html.lite #cosmos .neb{display:none!important}#why,#resume,#wall{content-visibility:auto;contain-intrinsic-size:auto 900px}</style>
 </head>
 <body>
 
 <a class="skip" href="#about">Skip to content</a>
 <noscript><p style="position:relative;z-index:20000;padding:20px;background:#000;color:#fff">Rudra K. is a front-end developer, esports in-game leader and filmmaker based in Mumbai, studying B.Tech IT at NMIMS Shirpur. Enable JavaScript to see the interactive portfolio.</p></noscript>
-<audio id="aud" src="assets/starboy.mp3" loop preload="auto" playsinline></audio>
+<audio id="aud" src="assets/starboy.mp3" loop preload="none" playsinline></audio>
 <a class="skipl" href="#about">Skip to content</a>
 <div id="intro">
   <canvas id="warp"></canvas><i id="xh"></i><i id="yh"></i>
